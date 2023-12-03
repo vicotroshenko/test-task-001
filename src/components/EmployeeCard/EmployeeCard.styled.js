@@ -23,6 +23,11 @@ export const LinkCard = styled.a`
 	text-decoration: none;
 	color: rgba(0, 0, 0, 0.87);
 	transition: all 250ms linear;
+	max-width: 90%;
+	white-space: wrap;
+	overflow: hidden;
+	text-overflow: ellipsis; 
+
 
 	&:hover {
 		text-decoration: underline;
@@ -42,3 +47,11 @@ export const Contacts = styled.div`
 	flex-direction: column;
 	width: 100%;
 `;
+
+
+export const TextCard = styled.p`
+	max-width: 90%;
+	white-space: nowrap;
+	overflow: hidden; 
+	text-overflow: ellipsis; 
+`

@@ -1,4 +1,4 @@
-import { Card, Contacts, ImageContainer, LinkCard } from "./EmployeeCard.styled";
+import { Card, Contacts, ImageContainer, LinkCard, TextCard } from "./EmployeeCard.styled";
 import userPhoto from "../../images/png/user1.png";
 
 const EmployeeCard = ({
@@ -13,9 +13,9 @@ const EmployeeCard = ({
       <ImageContainer>
         <img src={image} alt={name} />
       </ImageContainer>
-      <p>{name}</p>
+      <TextCard>{name}</TextCard>
       <Contacts>
-        <p>{position}</p>
+        <TextCard>{position}</TextCard>
         <LinkCard href={`mailto:${email}`}>{email}</LinkCard>
         <LinkCard href={`tel:${phone}`}>{phone}</LinkCard>
       </Contacts>

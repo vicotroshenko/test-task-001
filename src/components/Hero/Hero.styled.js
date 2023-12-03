@@ -8,6 +8,16 @@ export const InnerContainer = styled.div`
 	height: 100%;
 	color: #fff;
 	text-align: center;
+	animation: blurElement 750ms linear;
+
+	@keyframes blurElement {
+		0% {
+			transform: translateY(20%) scale(0.8);
+		}
+		100% {
+			transform: translateY(0) scale(1);
+		}
+	}
 `;
 
 export const Title = styled.h1`

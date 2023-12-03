@@ -1,5 +1,5 @@
 import Container from "../Container/Container";
-import heroImage from "../../images/jpg/hero-image.jpg";
+import heroImage from "../../images/jpg/hero-image.webp";
 import { InnerContainer, Title, Text } from "./Hero.styled";
 import ButtonPrimery from "../ButtonPrimery/ButtonPrimery";
 
@@ -10,7 +10,7 @@ const Hero = () => {
       padding={"40px 16px 71px 16px"}
       paddingTbalet={"89px 16px 88px 16px"}
       paddingDesctop={"164px 16px 163px 16px"}
-      background={`linear-gradient(0deg, rgba(0, 0, 0, 0.50) 0%, rgba(0, 0, 0, 0.50) 100%), url(${heroImage}) lightgray -1270.215px -412.112px / 342.315% 164.03% no-repeat`}
+      background={`linear-gradient(0deg, rgba(0, 0, 0, 0.50) 0%, rgba(0, 0, 0, 0.50) 100%), url(${heroImage}) no-repeat`}
     >
       <InnerContainer>
         <Title>Test assignment for front-end developer</Title>

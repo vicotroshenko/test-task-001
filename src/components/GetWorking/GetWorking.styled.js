@@ -3,7 +3,7 @@ import { mediaRules } from "../../GlobalStyle/GlobalStyle";
 
 export const List = styled.ul`
 	display: grid;
-	grid-template-columns: repeat(auto-fill, minmax(282px, 370px));
+	grid-template-columns: repeat(auto-fill, minmax(282px, 344px));
 	justify-content: center;
 	gap: 20px;
 	margin-bottom: 50px;
@@ -13,7 +13,11 @@ export const List = styled.ul`
 	}
 
 	@media ${mediaRules.desctop} {
+		grid-template-columns: repeat(auto-fill, minmax(282px, 282px));
 		gap: 29px;
+	}
+	@media ${mediaRules.large} {
+		grid-template-columns: repeat(auto-fill, minmax(282px, 370px));
 	}
 `;
 
